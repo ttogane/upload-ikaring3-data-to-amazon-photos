@@ -1,0 +1,10 @@
+version: '3'
+services:
+  upload-ikaring3-data-to-amazon-photos:
+    build: .
+    ports:
+      - "9001:8080"
+    volumes:
+      - ./:/var/task
+    env_file:
+      - .env
